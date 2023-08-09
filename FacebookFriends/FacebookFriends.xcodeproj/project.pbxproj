@@ -28,6 +28,8 @@
 		292F40C22A83C89D003F3A7F /* FriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40C12A83C89D003F3A7F /* FriendHeaderView.swift */; };
 		292F40C62A83C9EF003F3A7F /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40C52A83C9EF003F3A7F /* UserResponse.swift */; };
 		292F40CD2A83DDEC003F3A7F /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40CC2A83DDEC003F3A7F /* UIAlertController+Ext.swift */; };
+		292F40D02A83E1A4003F3A7F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 292F40CF2A83E1A4003F3A7F /* Kingfisher */; };
+		292F40D22A83E1AE003F3A7F /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40D12A83E1AE003F3A7F /* UIImage+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,7 @@
 		292F40C12A83C89D003F3A7F /* FriendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHeaderView.swift; sourceTree = "<group>"; };
 		292F40C52A83C9EF003F3A7F /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		292F40CC2A83DDEC003F3A7F /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
+		292F40D12A83E1AE003F3A7F /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292F40D02A83E1A4003F3A7F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,7 @@
 			children = (
 				292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */,
 				292F40CC2A83DDEC003F3A7F /* UIAlertController+Ext.swift */,
+				292F40D12A83E1AE003F3A7F /* UIImage+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +261,9 @@
 			dependencies = (
 			);
 			name = FacebookFriends;
+			packageProductDependencies = (
+				292F40CF2A83E1A4003F3A7F /* Kingfisher */,
+			);
 			productName = FacebookFriends;
 			productReference = 292F407D2A83A748003F3A7F /* FacebookFriends.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 292F40742A83A748003F3A7F;
+			packageReferences = (
+				292F40CE2A83E1A4003F3A7F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 292F407E2A83A748003F3A7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -315,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292F40D22A83E1AE003F3A7F /* UIImage+Ext.swift in Sources */,
 				292F40B12A83BCC5003F3A7F /* UIView+Ext.swift in Sources */,
 				292F40BD2A83C335003F3A7F /* FriendViewModel.swift in Sources */,
 				292F40A12A83A804003F3A7F /* LoginViewController.swift in Sources */,
@@ -544,6 +556,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		292F40CE2A83E1A4003F3A7F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		292F40CF2A83E1A4003F3A7F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 292F40CE2A83E1A4003F3A7F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 292F40752A83A748003F3A7F /* Project object */;
 }

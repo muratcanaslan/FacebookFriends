@@ -22,6 +22,11 @@ final class FriendListTableCell: UITableViewCell {
     func configure(with model: FriendViewModel) {
         self.friendName.text = model.fullname
         self.friendUsername.text = model.username
+        if let image = model.picture?.medium {
+            self.friendImage.downloadedFrom(url: image)
+        } else {
+            self.friendImage.backgroundColor = .systemRed.withAlphaComponent(0.5)
+        }
     }
 }
 
