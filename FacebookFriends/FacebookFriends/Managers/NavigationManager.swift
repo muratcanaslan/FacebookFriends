@@ -14,25 +14,16 @@ final class NavigationManager {
     
     func showLogin() {
         let vc = LoginViewController()
-        show(vc)
+        vc.modalTransitionStyle = .crossDissolve
+        guard let window = UIApplication.shared.keyWindow else { return }
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window, duration: 0.2, options: .transitionCrossDissolve, animations: nil, completion: nil)
     }
     
     func showFriendList() {
         let vc = UINavigationController(rootViewController: FriendListViewController())
-        show(vc)
-    }
-    
-    private func getCurrentWindow() -> UIWindow {
-        var window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-        if window == nil {
-            window = UIWindow(frame: UIScreen.main.bounds)
-            window?.makeKeyAndVisible()
-        }
-        return window!
-    }
-    
-    private func show(_ vc: UIViewController) {
-        let window = getCurrentWindow()
+        guard let window = UIApplication.shared.keyWindow else { return }
         window.rootViewController = vc
         window.makeKeyAndVisible()
         UIView.transition(with: window, duration: 0.2, options: .transitionCrossDissolve, animations: nil, completion: nil)

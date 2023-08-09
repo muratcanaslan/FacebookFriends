@@ -31,5 +31,6 @@ final class LoginViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction private func didTapLogin(_ sender: UIButton) {
+        NavigationManager.shared.showFriendList()
     }
 }

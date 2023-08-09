@@ -23,7 +23,7 @@ struct User: Decodable {
     
     enum Gender: String, CodingKey, Decodable {
         case female = "female"
-        case gender = "gender"
+        case male = "male"
     }
     
     struct Name: Decodable {
@@ -41,8 +41,8 @@ struct User: Decodable {
     }
     
     struct Coordinates: Decodable {
-        var latitude: Double?
-        var longitude: Double?
+        var latitude: String?
+        var longitude: String?
     }
     
     struct Login: Decodable {
