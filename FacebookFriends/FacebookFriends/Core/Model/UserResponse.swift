@@ -18,7 +18,7 @@ struct User: Decodable {
     let email: String?
     let login: Login?
     let phone: String?
-    let nation: String?
+    let nat: String?
     let picture: Picture?
     
     enum Gender: String, CodingKey, Decodable {
@@ -34,7 +34,6 @@ struct User: Decodable {
     
     struct Location: Decodable {
         var city: String?
-        var state: String?
         var country: String?
         var coordinates: Coordinates?
         

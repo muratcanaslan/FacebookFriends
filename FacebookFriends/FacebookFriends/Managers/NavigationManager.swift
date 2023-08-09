@@ -15,7 +15,7 @@ final class NavigationManager {
     func showLogin() {
         let vc = LoginViewController()
         vc.modalTransitionStyle = .crossDissolve
-        guard let window = UIApplication.shared.keyWindow else { return }
+        guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
         window.rootViewController = vc
         window.makeKeyAndVisible()
         UIView.transition(with: window, duration: 0.2, options: .transitionCrossDissolve, animations: nil, completion: nil)
@@ -23,9 +23,14 @@ final class NavigationManager {
     
     func showFriendList() {
         let vc = UINavigationController(rootViewController: FriendListViewController())
-        guard let window = UIApplication.shared.keyWindow else { return }
+        guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
         window.rootViewController = vc
         window.makeKeyAndVisible()
         UIView.transition(with: window, duration: 0.2, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+    
+    func showFriendDetail(on nav: UINavigationController, with friend: FriendViewModel) {
+        let vc = FriendDetailViewController(friend: friend)
+        nav.pushViewController(vc, animated: true)
     }
 }

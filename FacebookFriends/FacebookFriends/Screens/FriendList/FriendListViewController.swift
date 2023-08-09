@@ -19,7 +19,7 @@ final class FriendListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Friend List"
+        title = "Friend List"
         
         setupTableView()
         setBlocks()
@@ -61,6 +61,6 @@ extension FriendListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewModel = viewModel.cellVMs[indexPath.row]
-        //TODO: - Navigate detail
+        NavigationManager.shared.showFriendDetail(on: navigationController!, with: viewModel)
     }
 }

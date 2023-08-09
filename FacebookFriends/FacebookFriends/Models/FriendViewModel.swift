@@ -24,7 +24,19 @@ struct FriendViewModel {
         self.email = model?.email ?? "-"
         self.username = model?.login?.username ?? "-"
         self.phone = model?.phone ?? "-"
-        self.nation = model?.nation ?? "-"
+        self.nation = model?.nat ?? "-"
         self.picture = model?.picture
+    }
+    
+    var locationString: String {
+        return "\(location?.city ?? "-")/\(location?.country ?? "-")"
+    }
+    
+    var longitude: Double {
+        return Double(location?.coordinates?.longitude ?? "") ?? 0.0
+    }
+    
+    var latitude: Double {
+        return Double(location?.coordinates?.latitude ?? "") ?? 0.0
     }
 }

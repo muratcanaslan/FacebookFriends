@@ -30,6 +30,10 @@
 		292F40CD2A83DDEC003F3A7F /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40CC2A83DDEC003F3A7F /* UIAlertController+Ext.swift */; };
 		292F40D02A83E1A4003F3A7F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 292F40CF2A83E1A4003F3A7F /* Kingfisher */; };
 		292F40D22A83E1AE003F3A7F /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40D12A83E1AE003F3A7F /* UIImage+Ext.swift */; };
+		292F40D62A83E2AD003F3A7F /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40D42A83E2AD003F3A7F /* FriendDetailViewController.swift */; };
+		292F40D72A83E2AD003F3A7F /* FriendDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40D52A83E2AD003F3A7F /* FriendDetailViewController.xib */; };
+		292F40DC2A83F468003F3A7F /* FriendLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40DB2A83F468003F3A7F /* FriendLocationView.xib */; };
+		292F40DE2A83F516003F3A7F /* FriendLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40DD2A83F516003F3A7F /* FriendLocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		292F40C52A83C9EF003F3A7F /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		292F40CC2A83DDEC003F3A7F /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 		292F40D12A83E1AE003F3A7F /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		292F40D42A83E2AD003F3A7F /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		292F40D52A83E2AD003F3A7F /* FriendDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendDetailViewController.xib; sourceTree = "<group>"; };
+		292F40DB2A83F468003F3A7F /* FriendLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendLocationView.xib; sourceTree = "<group>"; };
+		292F40DD2A83F516003F3A7F /* FriendLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +114,9 @@
 		292F40942A83A760003F3A7F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				292F409E2A83A7F0003F3A7F /* Login */,
+				292F40D32A83E295003F3A7F /* FriendDetail */,
 				292F40992A83A7BA003F3A7F /* FriendList */,
+				292F409E2A83A7F0003F3A7F /* Login */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -171,6 +180,7 @@
 		292F40A32A83A872003F3A7F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				292F40DA2A83F45B003F3A7F /* FriendLocationView */,
 				292F40BE2A83C866003F3A7F /* FriendHeaderView */,
 				292F40A72A83AFF8003F3A7F /* InputTextFieldView */,
 			);
@@ -245,6 +255,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		292F40D32A83E295003F3A7F /* FriendDetail */ = {
+			isa = PBXGroup;
+			children = (
+				292F40D42A83E2AD003F3A7F /* FriendDetailViewController.swift */,
+				292F40D52A83E2AD003F3A7F /* FriendDetailViewController.xib */,
+			);
+			path = FriendDetail;
+			sourceTree = "<group>";
+		};
+		292F40DA2A83F45B003F3A7F /* FriendLocationView */ = {
+			isa = PBXGroup;
+			children = (
+				292F40DB2A83F468003F3A7F /* FriendLocationView.xib */,
+				292F40DD2A83F516003F3A7F /* FriendLocationView.swift */,
+			);
+			path = FriendLocationView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				292F40B92A83C296003F3A7F /* FriendListTableCell.xib in Resources */,
+				292F40D72A83E2AD003F3A7F /* FriendDetailViewController.xib in Resources */,
+				292F40DC2A83F468003F3A7F /* FriendLocationView.xib in Resources */,
 				292F40A22A83A804003F3A7F /* LoginViewController.xib in Resources */,
 				292F408D2A83A749003F3A7F /* LaunchScreen.storyboard in Resources */,
 				292F40C02A83C88E003F3A7F /* FriendHeaderView.xib in Resources */,
@@ -336,6 +366,8 @@
 				292F40BB2A83C313003F3A7F /* FriendListViewModel.swift in Sources */,
 				292F40AB2A83B036003F3A7F /* InputTextFieldView.swift in Sources */,
 				292F40CD2A83DDEC003F3A7F /* UIAlertController+Ext.swift in Sources */,
+				292F40D62A83E2AD003F3A7F /* FriendDetailViewController.swift in Sources */,
+				292F40DE2A83F516003F3A7F /* FriendLocationView.swift in Sources */,
 				292F409C2A83A7CA003F3A7F /* FriendListViewController.swift in Sources */,
 				292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */,
 				292F40812A83A748003F3A7F /* AppDelegate.swift in Sources */,

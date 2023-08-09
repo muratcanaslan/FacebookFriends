@@ -71,7 +71,7 @@ final class InputTextFieldView: UIView {
     }
     
     //MARK: - Actions
-    @objc func didTextEditingChanged() {
+    @objc private func didTextEditingChanged() {
         viewModel.text = inputTextField.text ?? ""
         setErrorValidation()
     }
