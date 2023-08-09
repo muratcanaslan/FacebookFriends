@@ -15,6 +15,11 @@
 		292F40A12A83A804003F3A7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F409F2A83A804003F3A7F /* LoginViewController.swift */; };
 		292F40A22A83A804003F3A7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40A02A83A804003F3A7F /* LoginViewController.xib */; };
 		292F40A62A83A8B9003F3A7F /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40A52A83A8B9003F3A7F /* NavigationManager.swift */; };
+		292F40A92A83B02B003F3A7F /* InputTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40A82A83B02B003F3A7F /* InputTextFieldView.xib */; };
+		292F40AB2A83B036003F3A7F /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40AA2A83B036003F3A7F /* InputTextFieldView.swift */; };
+		292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */; };
+		292F40AF2A83BBA8003F3A7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40AE2A83BBA8003F3A7F /* LoginViewModel.swift */; };
+		292F40B12A83BCC5003F3A7F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		292F409F2A83A804003F3A7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		292F40A02A83A804003F3A7F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		292F40A52A83A8B9003F3A7F /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		292F40A82A83B02B003F3A7F /* InputTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextFieldView.xib; sourceTree = "<group>"; };
+		292F40AA2A83B036003F3A7F /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldViewViewModel.swift; sourceTree = "<group>"; };
+		292F40AE2A83BBA8003F3A7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		292F40972A83A772003F3A7F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 			children = (
 				292F409F2A83A804003F3A7F /* LoginViewController.swift */,
 				292F40A02A83A804003F3A7F /* LoginViewController.xib */,
+				292F40AE2A83BBA8003F3A7F /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -133,6 +145,7 @@
 		292F40A32A83A872003F3A7F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				292F40A72A83AFF8003F3A7F /* InputTextFieldView */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -143,6 +156,16 @@
 				292F40A52A83A8B9003F3A7F /* NavigationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		292F40A72A83AFF8003F3A7F /* InputTextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				292F40AA2A83B036003F3A7F /* InputTextFieldView.swift */,
+				292F40A82A83B02B003F3A7F /* InputTextFieldView.xib */,
+				292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */,
+			);
+			path = InputTextFieldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				292F408D2A83A749003F3A7F /* LaunchScreen.storyboard in Resources */,
 				292F408A2A83A749003F3A7F /* Assets.xcassets in Resources */,
 				292F409D2A83A7CA003F3A7F /* FriendListViewController.xib in Resources */,
+				292F40A92A83B02B003F3A7F /* InputTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292F40B12A83BCC5003F3A7F /* UIView+Ext.swift in Sources */,
 				292F40A12A83A804003F3A7F /* LoginViewController.swift in Sources */,
 				292F40A62A83A8B9003F3A7F /* NavigationManager.swift in Sources */,
+				292F40AB2A83B036003F3A7F /* InputTextFieldView.swift in Sources */,
 				292F409C2A83A7CA003F3A7F /* FriendListViewController.swift in Sources */,
+				292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */,
 				292F40812A83A748003F3A7F /* AppDelegate.swift in Sources */,
+				292F40AF2A83BBA8003F3A7F /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

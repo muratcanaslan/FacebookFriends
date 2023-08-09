@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputTextFieldView" customModule="FacebookFriends" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="5VA-r1-Yev" id="t8W-zF-Meu"/>
+                <outlet property="inputTextField" destination="hfq-iD-bOQ" id="ABZ-qc-lT2"/>
+                <outlet property="inputTitle" destination="x7B-YM-5fr" id="cJG-vh-t4T"/>
+                <outlet property="validationMessage" destination="87Z-rN-xhr" id="KI0-Ns-fZ8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VA-r1-Yev">
+                    <rect key="frame" x="16" y="0.0" width="431" height="130"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ftf-tJ-euG">
+                            <rect key="frame" x="8" y="8" width="415" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7B-YM-5fr">
+                                    <rect key="frame" x="0.0" y="0.0" width="415" height="62"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfq-iD-bOQ">
+                                    <rect key="frame" x="0.0" y="66" width="415" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="pEQ-sq-5Pi"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-rN-xhr">
+                                    <rect key="frame" x="0.0" y="114" width="415" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Ftf-tJ-euG" firstAttribute="top" secondItem="5VA-r1-Yev" secondAttribute="top" constant="8" id="CgY-Fv-sIv"/>
+                        <constraint firstAttribute="bottom" secondItem="Ftf-tJ-euG" secondAttribute="bottom" constant="8" id="Qms-es-u6H"/>
+                        <constraint firstItem="Ftf-tJ-euG" firstAttribute="leading" secondItem="5VA-r1-Yev" secondAttribute="leading" constant="8" id="Xed-2K-0q6"/>
+                        <constraint firstAttribute="trailing" secondItem="Ftf-tJ-euG" secondAttribute="trailing" constant="8" id="d39-RV-g7f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5VA-r1-Yev" secondAttribute="trailing" constant="16" id="6id-rG-kJI"/>
+                <constraint firstItem="5VA-r1-Yev" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gzn-Ae-n8B"/>
+                <constraint firstAttribute="bottom" secondItem="5VA-r1-Yev" secondAttribute="bottom" id="YzX-dd-LuK"/>
+                <constraint firstItem="5VA-r1-Yev" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dCC-p5-LQD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-168.3098591549296"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
