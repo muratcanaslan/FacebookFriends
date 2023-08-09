@@ -7,11 +7,16 @@
 
 import UIKit
 
-class FriendListViewController: UIViewController {
+final class FriendListViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet private weak var tableView: UITableView!
+    
+    //MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        navigationItem.title = "Friend List"
+        
     }
 }

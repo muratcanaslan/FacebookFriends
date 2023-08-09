@@ -20,6 +20,13 @@
 		292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */; };
 		292F40AF2A83BBA8003F3A7F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40AE2A83BBA8003F3A7F /* LoginViewModel.swift */; };
 		292F40B12A83BCC5003F3A7F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */; };
+		292F40B82A83C296003F3A7F /* FriendListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40B62A83C296003F3A7F /* FriendListTableCell.swift */; };
+		292F40B92A83C296003F3A7F /* FriendListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40B72A83C296003F3A7F /* FriendListTableCell.xib */; };
+		292F40BB2A83C313003F3A7F /* FriendListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40BA2A83C313003F3A7F /* FriendListViewModel.swift */; };
+		292F40BD2A83C335003F3A7F /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40BC2A83C335003F3A7F /* FriendViewModel.swift */; };
+		292F40C02A83C88E003F3A7F /* FriendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40BF2A83C88E003F3A7F /* FriendHeaderView.xib */; };
+		292F40C22A83C89D003F3A7F /* FriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40C12A83C89D003F3A7F /* FriendHeaderView.swift */; };
+		292F40C62A83C9EF003F3A7F /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40C52A83C9EF003F3A7F /* UserResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldViewViewModel.swift; sourceTree = "<group>"; };
 		292F40AE2A83BBA8003F3A7F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		292F40B02A83BCC5003F3A7F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		292F40B62A83C296003F3A7F /* FriendListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableCell.swift; sourceTree = "<group>"; };
+		292F40B72A83C296003F3A7F /* FriendListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendListTableCell.xib; sourceTree = "<group>"; };
+		292F40BA2A83C313003F3A7F /* FriendListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewModel.swift; sourceTree = "<group>"; };
+		292F40BC2A83C335003F3A7F /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
+		292F40BF2A83C88E003F3A7F /* FriendHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendHeaderView.xib; sourceTree = "<group>"; };
+		292F40C12A83C89D003F3A7F /* FriendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHeaderView.swift; sourceTree = "<group>"; };
+		292F40C52A83C9EF003F3A7F /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +86,11 @@
 			children = (
 				292F408E2A83A749003F3A7F /* Info.plist */,
 				292F40962A83A76B003F3A7F /* APP */,
+				292F40C32A83C9D5003F3A7F /* Core */,
 				292F40972A83A772003F3A7F /* Extensions */,
 				292F40A42A83A8A5003F3A7F /* Managers */,
 				292F40982A83A77B003F3A7F /* Resources */,
+				292F40C72A83CE93003F3A7F /* Models */,
 				292F40942A83A760003F3A7F /* Screens */,
 				292F40952A83A764003F3A7F /* UI Components */,
 			);
@@ -93,6 +109,7 @@
 		292F40952A83A764003F3A7F /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				292F40B42A83C26D003F3A7F /* TableCells */,
 				292F40A32A83A872003F3A7F /* CustomViews */,
 			);
 			path = "UI Components";
@@ -128,6 +145,7 @@
 			children = (
 				292F409A2A83A7CA003F3A7F /* FriendListViewController.swift */,
 				292F409B2A83A7CA003F3A7F /* FriendListViewController.xib */,
+				292F40BA2A83C313003F3A7F /* FriendListViewModel.swift */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
@@ -145,6 +163,7 @@
 		292F40A32A83A872003F3A7F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				292F40BE2A83C866003F3A7F /* FriendHeaderView */,
 				292F40A72A83AFF8003F3A7F /* InputTextFieldView */,
 			);
 			path = CustomViews;
@@ -166,6 +185,56 @@
 				292F40AC2A83B058003F3A7F /* InputTextFieldViewViewModel.swift */,
 			);
 			path = InputTextFieldView;
+			sourceTree = "<group>";
+		};
+		292F40B42A83C26D003F3A7F /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				292F40B52A83C277003F3A7F /* FriendListCell */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		292F40B52A83C277003F3A7F /* FriendListCell */ = {
+			isa = PBXGroup;
+			children = (
+				292F40B62A83C296003F3A7F /* FriendListTableCell.swift */,
+				292F40B72A83C296003F3A7F /* FriendListTableCell.xib */,
+			);
+			path = FriendListCell;
+			sourceTree = "<group>";
+		};
+		292F40BE2A83C866003F3A7F /* FriendHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				292F40BF2A83C88E003F3A7F /* FriendHeaderView.xib */,
+				292F40C12A83C89D003F3A7F /* FriendHeaderView.swift */,
+			);
+			path = FriendHeaderView;
+			sourceTree = "<group>";
+		};
+		292F40C32A83C9D5003F3A7F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				292F40C42A83C9DF003F3A7F /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		292F40C42A83C9DF003F3A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				292F40C52A83C9EF003F3A7F /* UserResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		292F40C72A83CE93003F3A7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				292F40BC2A83C335003F3A7F /* FriendViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292F40B92A83C296003F3A7F /* FriendListTableCell.xib in Resources */,
 				292F40A22A83A804003F3A7F /* LoginViewController.xib in Resources */,
 				292F408D2A83A749003F3A7F /* LaunchScreen.storyboard in Resources */,
+				292F40C02A83C88E003F3A7F /* FriendHeaderView.xib in Resources */,
 				292F408A2A83A749003F3A7F /* Assets.xcassets in Resources */,
 				292F409D2A83A7CA003F3A7F /* FriendListViewController.xib in Resources */,
 				292F40A92A83B02B003F3A7F /* InputTextFieldView.xib in Resources */,
@@ -242,12 +313,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				292F40B12A83BCC5003F3A7F /* UIView+Ext.swift in Sources */,
+				292F40BD2A83C335003F3A7F /* FriendViewModel.swift in Sources */,
 				292F40A12A83A804003F3A7F /* LoginViewController.swift in Sources */,
+				292F40B82A83C296003F3A7F /* FriendListTableCell.swift in Sources */,
 				292F40A62A83A8B9003F3A7F /* NavigationManager.swift in Sources */,
+				292F40C22A83C89D003F3A7F /* FriendHeaderView.swift in Sources */,
+				292F40BB2A83C313003F3A7F /* FriendListViewModel.swift in Sources */,
 				292F40AB2A83B036003F3A7F /* InputTextFieldView.swift in Sources */,
 				292F409C2A83A7CA003F3A7F /* FriendListViewController.swift in Sources */,
 				292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */,
 				292F40812A83A748003F3A7F /* AppDelegate.swift in Sources */,
+				292F40C62A83C9EF003F3A7F /* UserResponse.swift in Sources */,
 				292F40AF2A83BBA8003F3A7F /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
