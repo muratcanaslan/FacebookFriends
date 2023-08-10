@@ -7,11 +7,19 @@
 
 import Foundation
 
-final class FriendListViewModel {
+protocol FriendListViewModelProtocol {
     //MARK: - Typealis
     typealias OnSuccess = () -> Void
     typealias OnError = (String) -> Void
     
+    var cellVMs: [FriendViewModel] { get set }
+    var onSuccess: OnSuccess? { get set }
+    var onError: OnError? { get set }
+    
+    func fetchList()
+}
+
+final class FriendListViewModel: FriendListViewModelProtocol{
     //MARK: - Properties
     var cellVMs: [FriendViewModel] = []
     var onSuccess: OnSuccess?

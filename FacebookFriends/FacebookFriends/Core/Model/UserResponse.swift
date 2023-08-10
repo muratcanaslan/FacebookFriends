@@ -34,6 +34,7 @@ struct User: Decodable {
     
     struct Location: Decodable {
         var city: String?
+        var state: String?
         var country: String?
         var coordinates: Coordinates?
         

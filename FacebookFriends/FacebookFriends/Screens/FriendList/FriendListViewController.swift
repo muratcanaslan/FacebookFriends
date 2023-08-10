@@ -34,16 +34,30 @@ final class FriendListViewController: UIViewController {
         tableView.register(FriendListTableCell.createXib(), forCellReuseIdentifier: FriendListTableCell.reuseIdentifier)
     }
     
+    private func addRightBarButton() {
+        let barButton = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(didTapLogout))
+        barButton.setTitleTextAttributes([.foregroundColor : UIColor.black, .font : UIFont.systemFont(ofSize: 21)], for: .normal)
+        barButton.setTitleTextAttributes([.foregroundColor : UIColor.black, .font : UIFont.systemFont(ofSize: 21)], for: .highlighted)
+
+        navigationItem.rightBarButtonItem = barButton
+    }
+    
     private func setBlocks() {
         viewModel.onSuccess = {
             DispatchQueue.main.async {
+                self.addRightBarButton()
                 self.tableView.reloadData()
             }
         }
         
         viewModel.onError = { message in
-            
+            self.showAlert(with: message)
         }
+    }
+    
+    //MARK: - IBActions
+    @objc func didTapLogout() {
+        NavigationManager.shared.showLogin()
     }
 }
 

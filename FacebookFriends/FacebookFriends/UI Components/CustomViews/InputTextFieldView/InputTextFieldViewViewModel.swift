@@ -28,7 +28,7 @@ class InputTextFieldViewModel {
     }
     
     var isValid: Bool {
-        return text.count > 3
+        return text.count >= 3
     }
 }
 

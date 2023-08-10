@@ -21,6 +21,7 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupViews()
+        setBlocks()
     }
     
     //MARK: - Helpers
@@ -29,8 +30,15 @@ final class LoginViewController: UIViewController {
         usernameView.configure(with: viewModel.usernameVM)
     }
     
+    private func setBlocks() {
+        viewModel.onError = { message in
+            self.showAlert(with: message)
+        }
+    }
+    
     //MARK: - IBActions
     @IBAction private func didTapLogin(_ sender: UIButton) {
+        if !viewModel.checkValidLogin() { return }
         NavigationManager.shared.showFriendList()
     }
 }
