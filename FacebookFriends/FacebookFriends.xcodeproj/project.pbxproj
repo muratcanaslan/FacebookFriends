@@ -34,6 +34,7 @@
 		292F40DC2A83F468003F3A7F /* FriendLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292F40DB2A83F468003F3A7F /* FriendLocationView.xib */; };
 		292F40DE2A83F516003F3A7F /* FriendLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F40DD2A83F516003F3A7F /* FriendLocationView.swift */; };
 		29354DC02A84F47F00D14A04 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29354DBF2A84F47F00D14A04 /* UIViewController+Ext.swift */; };
+		29354DC22A84FA2400D14A04 /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29354DC12A84FA2400D14A04 /* InternetConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		292F40DB2A83F468003F3A7F /* FriendLocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendLocationView.xib; sourceTree = "<group>"; };
 		292F40DD2A83F516003F3A7F /* FriendLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendLocationView.swift; sourceTree = "<group>"; };
 		29354DBF2A84F47F00D14A04 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		29354DC12A84FA2400D14A04 /* InternetConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				292F40A52A83A8B9003F3A7F /* NavigationManager.swift */,
+				29354DC12A84FA2400D14A04 /* InternetConnectionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				292F40AB2A83B036003F3A7F /* InputTextFieldView.swift in Sources */,
 				292F40D62A83E2AD003F3A7F /* FriendDetailViewController.swift in Sources */,
 				292F40DE2A83F516003F3A7F /* FriendLocationView.swift in Sources */,
+				29354DC22A84FA2400D14A04 /* InternetConnectionManager.swift in Sources */,
 				292F409C2A83A7CA003F3A7F /* FriendListViewController.swift in Sources */,
 				292F40AD2A83B058003F3A7F /* InputTextFieldViewViewModel.swift in Sources */,
 				292F40812A83A748003F3A7F /* AppDelegate.swift in Sources */,

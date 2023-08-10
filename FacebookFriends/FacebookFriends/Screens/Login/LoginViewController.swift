@@ -38,7 +38,13 @@ final class LoginViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction private func didTapLogin(_ sender: UIButton) {
+        if !InternetConnectionManager.isConnectedToNetwork() {
+            showAlert(with: "İnternet bağlantınızı kontrol ediniz.")
+            return
+        }
+        
         if !viewModel.checkValidLogin() { return }
+        
         NavigationManager.shared.showFriendList()
     }
 }
